@@ -1,4 +1,4 @@
-# TradeAI Intel
+# TradeIntel
 
 TradeAI is an ASP.NET Core Web API that leverages AI providers such as OpenAI to generate equity research, market analysis, SWOT analysis, investment theses, and other AI-driven research insights.
 
