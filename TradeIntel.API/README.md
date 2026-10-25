@@ -1,6 +1,6 @@
-﻿# TradeAI API
+﻿# TradeIntel API
 
-TradeAI is an ASP.NET Core Web API that leverages AI providers such as OpenAI to generate equity research, market analysis, SWOT analysis, investment theses, and other AI-driven research insights.
+TradeIntel is an ASP.NET Core Web API that leverages AI providers such as OpenAI to generate equity research, market analysis, SWOT analysis, investment theses, and other AI-driven research insights.
 
 ## Prerequisites
 
@@ -147,21 +147,21 @@ Common causes include:
 The solution follows a layered architecture:
 
 ```text
-TradeAI.API
+TradeIntel.API
     Controllers
     Request/Response Models
 
-TradeAI.Application
+TradeIntel.Application
     Business Use Cases
     Service Contracts
     DTOs
 
-TradeAI.Domain
+TradeIntel.Domain
     Entities
     Value Objects
     Domain Logic
 
-TradeAI.Infrastructure
+TradeIntel.Infrastructure
     OpenAI Integration
     Persistence
     External Services
@@ -179,3 +179,44 @@ Domain
 Infrastructure
  implements Application contracts
 ```
+
+This architecture promotes separation of concerns, testability, and flexibility when replacing external providers or infrastructure components.
+
+---
+
+## OpenAI Settings Class
+
+```csharp
+public class OpenAISettings
+{
+    public string ApiKey { get; set; } = string.Empty;
+
+    public string Model { get; set; } = "gpt-4o";
+}
+```
+
+---
+
+## Registering Configuration
+
+```csharp
+builder.Services.Configure<OpenAISettings>(
+    builder.Configuration.GetSection("OpenAI"));
+```
+
+---
+
+## Consuming Settings via IOptions
+
+```csharp
+public class OpenAIProvider
+{
+    private readonly OpenAISettings _settings;
+
+    public OpenAIProvider(IOptions<OpenAISettings> options)
+    {
+        _settings = options.Value;
+    }
+}
+```
+
