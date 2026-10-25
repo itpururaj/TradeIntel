@@ -1,0 +1,6 @@
+@TradeIntel_HostAddress = http://localhost:5195
+
+GET {{TradeIntel_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
