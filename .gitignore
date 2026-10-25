@@ -4,3 +4,9 @@
 
 /.vs
 /TradeIntel.Application/obj
+/TradeIntel.API/settings.json
+/TradeIntel.Application/bin/Debug/net8.0
+/TradeIntel.Domain/bin/Debug/net8.0
+/TradeIntel.Domain/obj
+/TradeIntel.Infrastructure/bin/Debug/net8.0
+/TradeIntel.Infrastructure/obj
