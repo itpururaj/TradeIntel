@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37806.7 d17.14
+VisualStudioVersion = 17.14.37806.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeIntel", "TradeIntel.csproj", "{40C96F69-58B5-4663-B962-6AB301F52C5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeIntel.API", "TradeIntel.API.csproj", "{40C96F69-58B5-4663-B962-6AB301F52C5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeIntel.Application", "..\TradeIntel.Application\TradeIntel.Application.csproj", "{407C8465-0ABB-4455-9E6D-7038A29E3628}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{40C96F69-58B5-4663-B962-6AB301F52C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C96F69-58B5-4663-B962-6AB301F52C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C96F69-58B5-4663-B962-6AB301F52C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407C8465-0ABB-4455-9E6D-7038A29E3628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407C8465-0ABB-4455-9E6D-7038A29E3628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407C8465-0ABB-4455-9E6D-7038A29E3628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407C8465-0ABB-4455-9E6D-7038A29E3628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

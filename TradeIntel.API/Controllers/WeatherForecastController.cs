@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace TradeIntel.Controllers
+namespace TradeIntel.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
